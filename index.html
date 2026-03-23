@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pizza Form - Laboratory 3</title>
+</head>
+
+<body>
+	<h2>🍕Pizza Order Form</h2>
+	<p>Fill out the details below to place your order</p>
+	
+	<form action="#" method="get">
+		<label for="fname">Full Name</label><br>
+		<input type="name" id="fname" name="fname" required><br>
+		<label for="email">Email Address</label><br>
+		<input type="email" id="email" name="email" required><br>
+		<label for="phone">Phone Number</label><br>
+		<input type="tel" id="phone" name="phone_number" required><br>
+		<label for="age">Age (13-99)</label><br>
+		<input type="number" id="age" name="age" min="13" max="99" required>
+
+		<hr>
+
+		<label for="choose">Choose Pizza Size:</label><br>
+		<input type="radio" id="small" name="pizza_size">
+		<label for="small">Small</label>
+		<input type="radio" id="medium" name="pizza_size" checked>
+		<label for="medium">Medium</label>
+		<input type="radio" id="large" name="pizza_size">
+		<label for="large">Large</label>
+		<input type="radio" id="extra_large" name="pizza_size">
+		<label for="extra_large">Extra Large</label>
+
+		<hr>
+
+		<label for="choose_crust">Choose a Crust:</label><br>
+		<select id="choose_crust">
+			<option value="default">-- Choose a crust --</option>
+			<option value="thin">Thin</option>
+			<option value="thicked">Thicked</option>
+			<option value="stuffed">Stuffed</option>
+			<option value="glutten-free">Glutten-Free</option>
+		</select>
+
+		<hr>
+		
+		<label for="choose_sauce">Choose Your Sauce:</label><br>
+		<select id="choose_sauce">
+			<option value="default">-- Choose a sauce --</option>
+			<optgroup label="Classic">
+				<option value="tomato">Tomato</option>
+				<option value="garlic-white">Thicked</option>
+			</optgroup>
+			<optgroup label="Special">
+				<option value="pesto">Stuffed</option>
+				<option value="barbecue">Barbecue</option>
+			</optgroup>
+		</select>
+
+		<hr>
+
+		<label for="choose_toppings">Choose Your Toppings:</label><br>
+		<input type="checkbox" id="cheese" name="cheese" value="Cheese" disabled checked>
+		<label for="cheese">Cheese</label>
+		<input type="checkbox" id="pepperoni" name="pepperoni" value="Pepperoni">
+		<label for="pepperoni">Pepperoni</label>
+		<input type="checkbox" id="mushrooms" name="mushrooms" value="Mushrooms">
+		<label for="mushrooms">Mushrooms</label>
+		<input type="checkbox" id="onions" name="onions" value="Onions">
+		<label for="onions">Onions</label>
+		<input type="checkbox" id="bellpepper" name="bellpepper" value="Bellpepper">
+		<label for="bellpepper">Bell Pepper</label><br>
+		<input type="checkbox" id="olives" name="olives" value="Olives">
+		<label for="olives">Olives</label>
+		<input type="checkbox" id="bacon" name="bacon" value="bacon">
+		<label for="bacon">Bacon</label>
+		<input type="checkbox" id="pineapple" name="pineapple" value="pineapple">
+		<label for="pineapple">Pineapple</label>
+		
+		<hr>
+		
+		<label for="delivery">Delivery Method:</label><br>
+		<input type="radio" id="home_delivery" name="delivery_method" value="Home Delivery">
+		<label for="home_delivery">Home Delivery</label>
+		<input type="radio" id="store_pickup" name="delivery_method" value="Store Pickup" checked>
+		<label for="store_pickup">Store Pickup</label><br><br>
+
+		<label for="delivery_address">Delivery Address:</label><br>
+
+		<textarea id="delivery_address" name="delivery_address" rows="4" cols="50" placeholder="Enter your full address here...">
+		</textarea>
+
+		<hr>
+		
+		<fieldset>
+			<legend>Payment Details</legend>
+			<label for="payment_method">Payment Method</label><br>
+			<select>
+				<option value="credit_card">Credit Card</option>
+				<option value="gcash">GCash</option>
+				<option value="cod">Cash on Delivery</option>
+			</select><br><br>
+			<label for="card_number">Card Number (Required for Credit Card only):</label><br>
+			<input type="number" id="card_number" name="card_number" max="16" placeholder="1234567890123456">
+		</fieldset>
+		<hr>
+		
+		<label for="prize_ref">Prize Reference:</label>
+		
+		<table style="width:100%; border:1px solid black; border-collapse:collapse;">
+			<thead style="background-color: #96D4D4">
+				<tr>
+					<th style="text-align:left;">Size</th>
+					<th style="text-align:left;">Base Price</th>
+					<th style="text-align:left;">Extra Toppings (each)</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Small</td>
+					<td>₱199</td>
+					<td>+₱20</td>
+				</tr>
+				<tr>
+					<td>Medium</td>
+					<td>₱299</td>
+					<td>+₱25</td>
+				</tr>
+				<tr>
+					<td>Large</td>
+					<td>₱399</td>
+					<td>+₱30</td>
+				</tr>
+				<tr>
+					<td>Extra Large</td>
+					<td>₱499</td>
+					<td>+₱35</td>
+				</tr>
+			</tbody>
+		</table>
+			
+		
+
+		
+		
+		
+		
+	</form>
+	
+</body>
+</html>
